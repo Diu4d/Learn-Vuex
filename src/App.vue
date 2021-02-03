@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <my-addition></my-addition>
+    <p>-----------------------------------</p>
+    <my-subtraction></my-subtraction>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import addition from './components/addition'
+import subtraction from './components/subtraction'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+
+    }
+  },
+  components:{
+    "my-addition":addition,
+    "my-subtraction":subtraction
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
